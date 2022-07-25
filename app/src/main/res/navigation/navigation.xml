@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/main">
+
+    <fragment
+        android:id="@+id/main"
+        android:name="org.portfolio.fwdproject.main"
+        android:label="main"
+        tools:layout="@layout/main" >
+        <action
+            android:id="@+id/action_main_to_questions2"
+            app:destination="@id/questions2" />
+        <action
+            android:id="@+id/action_main_to_answer2"
+            app:destination="@id/answer2" />
+        <action
+            android:id="@+id/action_main_to_about"
+            app:destination="@id/about" />
+    </fragment>
+    <fragment
+        android:id="@+id/questions2"
+        android:name="org.portfolio.fwdproject.questions"
+        android:label="questions"
+        tools:layout="@layout/questions" >
+        <action
+            android:id="@+id/action_questions2_to_about"
+            app:destination="@id/about" />
+    </fragment>
+    <fragment
+        android:id="@+id/answer2"
+        android:name="org.portfolio.fwdproject.answer"
+        android:label="answer"
+        tools:layout="@layout/answer" >
+        <action
+            android:id="@+id/action_answer2_to_about"
+            app:destination="@id/about" />
+    </fragment>
+    <fragment
+        android:id="@+id/about"
+        android:name="org.portfolio.fwdproject.About"
+        android:label="fragment_about"
+        tools:layout="@layout/about" />
+</navigation>

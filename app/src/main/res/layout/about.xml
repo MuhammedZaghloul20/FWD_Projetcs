@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".About">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/warning"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="30dp"
+        android:text="In this Project, i tried to applying every thing i learned, i faced some problems which i can't solved it, like treating with DataBinding and link the navigation drawer with the tool bar, but i added another feature like TextToSpeech , i learned this from  youtube tutorials"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+</LinearLayout>
